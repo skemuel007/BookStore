@@ -1,8 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7458771F-EAC2-4C74-A1B5-93F40511EE3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6637F48A-F289-401A-9673-CC047EC6C761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.API", "src\BookStore.API\BookStore.API.csproj", "{43C52E28-BDBF-4EBE-A24A-0CBA50C52E05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Domain", "src\BookStore.Domain\BookStore.Domain.csproj", "{F1A2E0FA-0C5D-45FD-8500-5B3597C258F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Infrastructure", "src\BookStore.Infrastructure\BookStore.Infrastructure.csproj", "{B53124AE-6A74-476C-8744-6DE525967033}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43C52E28-BDBF-4EBE-A24A-0CBA50C52E05} = {7458771F-EAC2-4C74-A1B5-93F40511EE3C}
+		{F1A2E0FA-0C5D-45FD-8500-5B3597C258F7} = {7458771F-EAC2-4C74-A1B5-93F40511EE3C}
+		{B53124AE-6A74-476C-8744-6DE525967033} = {7458771F-EAC2-4C74-A1B5-93F40511EE3C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43C52E28-BDBF-4EBE-A24A-0CBA50C52E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C52E28-BDBF-4EBE-A24A-0CBA50C52E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C52E28-BDBF-4EBE-A24A-0CBA50C52E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C52E28-BDBF-4EBE-A24A-0CBA50C52E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A2E0FA-0C5D-45FD-8500-5B3597C258F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A2E0FA-0C5D-45FD-8500-5B3597C258F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A2E0FA-0C5D-45FD-8500-5B3597C258F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A2E0FA-0C5D-45FD-8500-5B3597C258F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53124AE-6A74-476C-8744-6DE525967033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53124AE-6A74-476C-8744-6DE525967033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53124AE-6A74-476C-8744-6DE525967033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53124AE-6A74-476C-8744-6DE525967033}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
