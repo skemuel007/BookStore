@@ -9,11 +9,11 @@ namespace BookStore.Infrastructure.Repositories;
 public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
 {
     protected readonly BookStoreDbContext _dbContext;
-    protected readonly DbSet<TEntity> DbSet;
+    internal DbSet<TEntity> DbSet;
 
     protected Repository(BookStoreDbContext dbContext)
     {
-        _dbContext = dbContext;
+        _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
         DbSet = dbContext.Set<TEntity>();
     }
     

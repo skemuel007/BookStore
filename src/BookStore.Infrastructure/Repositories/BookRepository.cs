@@ -7,7 +7,7 @@ namespace BookStore.Infrastructure.Repositories;
 
 public class BookRepository : Repository<Book>, IBookRepository
 {
-    protected BookRepository(BookStoreDbContext dbContext) : base(dbContext)
+    public BookRepository(BookStoreDbContext dbContext) : base(dbContext)
     {
     }
 
